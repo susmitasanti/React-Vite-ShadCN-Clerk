@@ -8,16 +8,12 @@ export function AppLayout() {
   const { isSignedIn } = useUser();
 
   return (
-    <div className="flex flex-col h-screen">
+	<>
       <Header />
-      <div className="flex flex-row flex-grow">
-        <div className="flex flex-col flex-grow">
-          <div className="container px-4 md:px-8 flex-grow flex flex-col ml-64">
+          <div className="container">
             <Outlet />
           </div>
-        </div>
-      </div>
       
-    </div>
+	</>
   );
 }
